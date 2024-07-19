@@ -1,6 +1,6 @@
 function nosleep { # this will prevent your machine from sleeping and move the mouse
      sudo -S <<< "YOUR PASSWORD" pmset disablesleep 1 # this disables display sleep when closed
-     python3 ~/PATH TO DIRECTORY/mouse_move/move_mouse.py & # this is the mouse jiggler
+     python3 ~/PATH TO DIRECTORY/mouse_move/move_mouse.py $* & # this is the mouse jiggler
      caffeinate -d & # this disables your machine from sleeping
  }
 
